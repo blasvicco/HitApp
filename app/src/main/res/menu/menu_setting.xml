@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.blassoft.hitapp.SettingActivity">
+
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_48dp"
+        android:title="@string/action_search"
+        android:orderInCategory="1" app:showAsAction="always" />
+
+    <item android:id="@+id/action_score"
+        android:icon="@drawable/ic_group_black_48dp"
+        android:title="@string/action_score"
+        android:orderInCategory="2" app:showAsAction="always"  />
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+        android:icon="@drawable/ic_more_vert_black_48dp"
+        android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="always"  />
+
+    <!-- to activate accounts -->
+    <item android:id="@+id/action_activate_account"
+        android:icon="@drawable/ic_warning_black_48dp"
+        android:title="@string/action_activate"
+        android:orderInCategory="100" app:showAsAction="always"  />
+</menu>

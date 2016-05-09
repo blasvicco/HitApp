@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name" translatable="false">HitApp.me</string>
+
+    <!-- Start APP -->
+    <string name="Logo">Logo</string>
+
+    <string name="err_cannot_connect_to_server">Error - Cannot connect to server.</string>
+
+    <!-- First login -->
+    <string name="Search">Search</string>
+    <string name="Settings">Settings</string>
+
+    <!-- Menu -->
+    <string name="action_search">Search</string>
+    <string name="action_score">Score</string>
+    <string name="action_activate">Activate</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Search -->
+
+    <!-- Result -->
+    <string name="user">User</string>
+    <string name="cell">Cell phone</string>
+    <string name="score">Score</string>
+    <string name="distance">Distance</string>
+    <string name="searching_for">Searching</string>
+    <string name="sort_distance">Distance</string>
+    <string name="sort_score">Score</string>
+    <string name="not_valid_cell_number">Not valid cell number</string>
+
+    <!-- Score -->
+    <string name="no_pending_score">You do not have contacts to score</string>
+    <string name="score_the_contact">Score your recent hits</string>
+    <string name="ok_button">OK</string>
+
+    <!-- Settings -->
+    <string name="edit_cell">Cell</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_category">Key words</string>
+    <string name="edit_discoverable">Visible</string>
+    <string name="button_save">Save</string>
+    <string name="use_next_code">Use this code to activate your account.</string>
+
+    <!-- Activate account -->
+    <string name="activate">Activate</string>
+    <string name="activate_account">Activate account</string>
+    <string name="activation_code_text">Enter the 4 digits code sent by SMS to confirm your cell number.</string>
+    <string name="new_code">New code</string>
+
+    <!-- General -->
+    <string name="title_activity_first_login" translatable="false">HitApp.me</string>
+    <string name="title_activity_search" translatable="false">HitApp.me</string>
+    <string name="title_activity_result_list" translatable="false">HitApp.me</string>
+    <string name="title_activity_setting" translatable="false">HitApp.me</string>
+    <string name="title_activity_score" translatable="false">HitApp.me</string>
+    <string name="title_activity_activate_account" translatable="false">HitApp.me</string>
+    <string name="phone">Phone</string>
+
+    <string name="no_connection">No connection detected</string>
+    <string name="loading">Loading</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="wait">Wait</string>
+    <string name="excellent">Excellent</string>
+    <string name="very_good">Very Good</string>
+    <string name="good">Good</string>
+    <string name="regular">Regular</string>
+    <string name="bad">Bad</string>
+    <string name="fix_current_location">Fix location</string>
+    <string name="no_results">No results for</string>
+    <string name="hits" translatable="false">Hits</string>
+    <string name="hit" translatable="false">Hit</string>
+    <string name="nav">Map</string>
+    <string name="recent_hits">Recent hits</string>
+    <string name="ej_nurse">e.g. babysitter</string>
+    <string name="ej_tag">e.g. #party</string>
+    <string name="ej_shops">e.g. petshop</string>
+    <string name="geo_is_not_on">Geo localization seems to be disabled, do you want to enable it?</string>
+    <string name="call">Call</string>
+    <string name="direction">Get directions</string>
+    <string name="choose">Choose an action</string>
+    <string name="around">Contacts around</string>
+    <string name="hits_around">Contacts around</string>
+    <string name="other_options">Other options</string>
+    <string name="top_hits">Top Hits</string>
+    <string name="edit_geo">Geo location options</string>
+    <string name="alt_number">Alternative phone</string>
+    <string name="location_mobil">Geo location mobil</string>
+    <string name="location_fix">Geo location fixed</string>
+    <string name="location">Localization</string>
+    <string name="dots">...</string>
+    <string name="geo">Geo</string>
+    <string name="delete">Delete</string>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="45dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="5dp"
+    android:id="@+id/result_row_1"
+    android:visibility="invisible"
+    android:clickable="true"
+    android:onClick="displayAction" >
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/result_set_usr_1"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/result_set_cat_1"
+            android:clickable="true"
+            android:onClick="displayAction"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:layout_below="@+id/result_set_usr_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/result_set_data_1"
+            android:clickable="true"
+            android:onClick="displayAction"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:layout_below="@+id/result_set_cat_1" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/result_set_nav_1"
+            android:visibility="invisible"
+            android:src="@drawable/ic_navigation_cyan_48dp"
+            android:contentDescription="@string/nav"
+            android:onClick="showMap"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/result_set_img_1"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/result_set_img_1"
+            android:visibility="invisible"
+            android:src="@drawable/ic_local_phone_cyan_48dp"
+            android:contentDescription="@string/phone"
+            android:onClick="intentDial"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+</TableRow>

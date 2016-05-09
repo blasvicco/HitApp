@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.blassoft.hitapp.SettingActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_marginBottom="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_discoverable"
+                    android:id="@+id/edit_discoverable"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/set_title_user"
+                    android:text="@string/user"
+                    android:textColor="#073763"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp">
+                <EditText android:id="@+id/edit_name"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="25"
+                    android:hint="@string/edit_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp">
+                <EditText android:id="@+id/edit_cell"
+                    android:inputType="phone"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="20"
+                    android:hint="@string/cell" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp">
+                <EditText android:id="@+id/edit_alt_number"
+                    android:inputType="phone"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="20"
+                    android:hint="@string/alt_number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/set_title_categories"
+                    android:text="@string/edit_category"
+                    android:textColor="#073763"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp">
+                <AutoCompleteTextView
+                    android:id="@+id/edit_category_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:width="200dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:editable="false"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:hint="@string/ej_nurse"
+                    android:layout_weight="1"
+                    android:maxLength="25" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp">
+                <AutoCompleteTextView
+                    android:id="@+id/edit_category_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:width="200dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:editable="false"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:hint="@string/ej_tag"
+                    android:layout_weight="1"
+                    android:maxLength="25" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp">
+                <AutoCompleteTextView
+                    android:id="@+id/edit_category_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:width="200dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:editable="false"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:hint="@string/ej_shops"
+                    android:layout_weight="1"
+                    android:maxLength="25" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/set_title_geo"
+                    android:text="@string/edit_geo"
+                    android:textColor="#073763"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:onClick="setLocation">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fix_or_mobil"
+                        android:text="@string/dots"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/ic_location_on_cyan_48dp"
+                        android:contentDescription="@string/geo"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location"
+                    android:text=""
+                    android:textSize="13sp"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

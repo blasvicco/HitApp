@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle" tools:targetApi="11">@style/MyActionBar</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+    </style>
+
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:titleTextStyle" tools:targetApi="11">@style/MyActionBarTitleText</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+
+
+        <item name="android:background">@color/my_black</item>
+        <item name="background">@color/my_black</item>
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

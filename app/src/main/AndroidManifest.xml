@@ -1,0 +1,66 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="blassoft.hitappme">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="blassoft.hitappme.StartAppActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="blassoft.hitappme.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name="blassoft.hitappme.ResultListActivity"
+            android:label="@string/title_activity_result_list"
+            android:configChanges="orientation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blassoft.hitappme.SearchActivity" />
+        </activity>
+        <activity
+            android:name="blassoft.hitappme.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blassoft.hitappme.SearchActivity" />
+        </activity>
+        <activity
+            android:name="blassoft.hitappme.ScoreActivity"
+            android:label="@string/title_activity_score"
+            android:configChanges="orientation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blassoft.hitappme.SearchActivity" />
+        </activity>
+        <activity
+            android:name="blassoft.hitappme.ActivateAccountActivity"
+            android:label="@string/title_activity_activate_account"
+            android:configChanges="orientation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blassoft.hitappme.SearchActivity" />
+        </activity>
+    </application>
+
+</manifest>

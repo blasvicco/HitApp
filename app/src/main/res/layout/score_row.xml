@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/row_1"
+    android:visibility="invisible"
+    android:minHeight="80dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textStyle="bold"
+            android:id="@+id/user_to_score_1"
+            android:textSize="16sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/cat_to_score_1"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/user_to_score_1" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score_value_1"
+            android:numStars="5"
+            android:rating="2.5"
+            style="@style/myRatingBar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score_img_1"
+            android:src="@drawable/ic_done_cyan_48dp"
+            android:contentDescription="@string/ok_button"
+            android:onClick="saveScore"
+            android:layout_alignTop="@+id/delete_img_1"
+            android:layout_toLeftOf="@+id/delete_img_1"
+            android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_img_1"
+            android:src="@drawable/ic_delete_cyan_48dp"
+            android:contentDescription="@string/delete"
+            android:onClick="deleteScore"
+            android:layout_alignTop="@+id/score_value_1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+</TableRow>
