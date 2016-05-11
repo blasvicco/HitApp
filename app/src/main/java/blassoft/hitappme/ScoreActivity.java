@@ -43,6 +43,7 @@ public class ScoreActivity extends ActionBarActivity {
         Activity activity = (Activity) context;
         try {
             TableLayout tableLayout = (TableLayout) activity.findViewById(R.id.table_score);
+            if (tableLayout == null) return;
             for (int i = tableLayout.getChildCount(); i < data.length(); i++) {
                 JSONObject score = data.getJSONObject(i);
                 TextView userToScore;

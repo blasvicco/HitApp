@@ -48,6 +48,7 @@ public class ResultListActivity extends ActionBarActivity {
         Activity activity = (Activity) context;
         if (data != null) {
             TableLayout tableLayout = (TableLayout) activity.findViewById(R.id.table_result);
+            if (tableLayout == null) return;
             for (int i = tableLayout.getChildCount(); i < ResultListActivity.users_by_d.length(); i++) {
                 try {
                     JSONObject usr = data.getJSONObject(i);
